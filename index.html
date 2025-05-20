@@ -91,7 +91,20 @@
         </footer>
     </div>
     
-    <!-- Include theme customizer script -->
-    <script src="js/theme-customizer.js"></script>
+    <!-- Include Lucide Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    
+    <!-- Include theme customizer scripts -->
+    <script src="js/new-theme-customizer.js"></script>
+    <script>
+        // Initialize Lucide icons safely
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof lucide !== 'undefined' && lucide.createIcons) {
+                lucide.createIcons();
+            } else {
+                console.warn('Lucide icons library not properly loaded');
+            }
+        });
+    </script>
 </body>
 </html>
