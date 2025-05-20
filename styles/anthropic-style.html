@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthropic Style Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#0F172A',
+                        'accent': '#E07A5F',
+                        'light-bg': '#FAF9F7',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-light-bg text-primary">
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-xl font-bold">COMPANY</span>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="#" class="border-primary text-primary inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Products</a>
+                        <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Solutions</a>
+                        <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Research</a>
+                        <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">About</a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <button type="button" class="bg-primary text-white rounded-md px-4 py-2 text-sm font-medium">Try Now</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+                <div>
+                    <h1 class="text-5xl font-bold tracking-tight text-primary mb-6">
+                        <span class="underline decoration-accent">AI solutions</span> that put safety at the frontier
+                    </h1>
+                    <p class="mt-6 text-xl text-gray-600 max-w-3xl">
+                        We build AI systems that are helpful, harmless, and honest. Our approach combines cutting-edge research with practical applications.
+                    </p>
+                    <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-opacity-90">
+                            Get Started
+                        </a>
+                        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-gray-300 text-base font-medium rounded-md text-primary bg-white hover:bg-gray-50">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-12 lg:mt-0">
+                    <div class="rounded-lg overflow-hidden">
+                        <svg class="w-full" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="600" height="400" fill="#F3F4F6" />
+                            <circle cx="300" cy="200" r="100" fill="#E07A5F" opacity="0.8" />
+                            <path d="M450,150 Q300,50 150,150 T100,300" stroke="#0F172A" stroke-width="8" fill="transparent" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary">Our Solutions</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                    Explore our range of AI-powered products designed to help your business thrive.
+                </p>
+            </div>
+
+            <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Feature 1 -->
+                <div class="bg-light-bg rounded-lg p-8 shadow-sm">
+                    <div class="text-accent mb-4">
+                        <i data-lucide="zap" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-2">Fast Processing</h3>
+                    <p class="text-gray-600">
+                        Our AI models are optimized for speed without compromising on quality or accuracy.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-light-bg rounded-lg p-8 shadow-sm">
+                    <div class="text-accent mb-4">
+                        <i data-lucide="shield" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-2">Enhanced Security</h3>
+                    <p class="text-gray-600">
+                        Built with security in mind, our solutions protect your data at every step.
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-light-bg rounded-lg p-8 shadow-sm">
+                    <div class="text-accent mb-4">
+                        <i data-lucide="check-circle" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-2">Guaranteed Accuracy</h3>
+                    <p class="text-gray-600">
+                        Our models are trained on diverse datasets to ensure high accuracy and reliability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-16 bg-light-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-primary mb-6">Trusted by Industry Leaders</h2>
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <p class="text-lg text-gray-600 italic">
+                            "Implementing this AI solution has transformed our business processes, resulting in a 40% increase in efficiency and significant cost savings."
+                        </p>
+                        <div class="mt-6 flex items-center">
+                            <div class="flex-shrink-0">
+                                <div class="h-10 w-10 rounded-full bg-gray-300"></div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-primary">Sarah Johnson</p>
+                                <p class="text-sm text-gray-500">CTO, Tech Innovations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 lg:mt-0 grid grid-cols-2 gap-4">
+                    <div class="bg-white p-4 rounded-lg shadow-sm flex items-center justify-center h-20">
+                        <span class="text-xl font-bold text-gray-400">LOGO 1</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm flex items-center justify-center h-20">
+                        <span class="text-xl font-bold text-gray-400">LOGO 2</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm flex items-center justify-center h-20">
+                        <span class="text-xl font-bold text-gray-400">LOGO 3</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm flex items-center justify-center h-20">
+                        <span class="text-xl font-bold text-gray-400">LOGO 4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design System Section -->
+    <section class="py-16 bg-light-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary">Design System</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                    Elements that make up this design theme.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <!-- Colors -->
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Color Palette</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-md bg-primary mr-4"></div>
+                            <div>
+                                <p class="font-medium">Primary: #0F172A</p>
+                                <p class="text-sm text-gray-500">Used for text, backgrounds, and primary elements</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-md bg-accent mr-4"></div>
+                            <div>
+                                <p class="font-medium">Accent: #E07A5F</p>
+                                <p class="text-sm text-gray-500">Used for highlights, accents, and call-to-action elements</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-md bg-light-bg mr-4"></div>
+                            <div>
+                                <p class="font-medium">Light Background: #FAF9F7</p>
+                                <p class="text-sm text-gray-500">Used for section backgrounds and contrast</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Typography -->
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Typography</h3>
+                    <p class="mb-4">All text uses the <span class="font-medium">Poppins</span> font family.</p>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-4xl font-bold">Heading 1</p>
+                            <p class="text-sm text-gray-500">Poppins Bold, 36px</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold">Heading 2</p>
+                            <p class="text-sm text-gray-500">Poppins Bold, 30px</p>
+                        </div>
+                        <div>
+                            <p class="text-xl font-semibold">Heading 3</p>
+                            <p class="text-sm text-gray-500">Poppins SemiBold, 20px</p>
+                        </div>
+                        <div>
+                            <p class="text-base">Body Text</p>
+                            <p class="text-sm text-gray-500">Poppins Regular, 16px</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Components -->
+            <div class="bg-white p-8 rounded-lg shadow-sm mb-8">
+                <h3 class="text-xl font-semibold text-primary mb-4">UI Components</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-medium mb-3">Buttons</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <button class="px-5 py-3 bg-primary text-white rounded-md font-medium">Primary Button</button>
+                                <p class="text-sm text-gray-500 mt-2">Used for primary actions</p>
+                            </div>
+                            <div>
+                                <button class="px-5 py-3 border border-gray-300 text-primary bg-white rounded-md font-medium">Secondary Button</button>
+                                <p class="text-sm text-gray-500 mt-2">Used for secondary actions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-medium mb-3">Cards</h4>
+                        <div class="bg-light-bg rounded-lg p-6 shadow-sm">
+                            <div class="text-accent mb-4">
+                                <i data-lucide="star" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-primary mb-2">Card Title</h3>
+                            <p class="text-gray-600">
+                                Card content with clean, minimal styling.
+                            </p>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2">Used for featuring content and information</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Design Principles -->
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-primary mb-4">Design Principles</h3>
+                <ul class="space-y-3 text-gray-600">
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="w-5 h-5 text-accent mr-2 flex-shrink-0"></i>
+                        <span><strong>Minimalism:</strong> Clean, uncluttered layouts with ample whitespace</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="w-5 h-5 text-accent mr-2 flex-shrink-0"></i>
+                        <span><strong>Typography-focused:</strong> Strong emphasis on readable, hierarchical typography</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="w-5 h-5 text-accent mr-2 flex-shrink-0"></i>
+                        <span><strong>Subtle accents:</strong> Sparing use of accent colors for emphasis</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-lucide="check" class="w-5 h-5 text-accent mr-2 flex-shrink-0"></i>
+                        <span><strong>Consistent spacing:</strong> Uniform padding and margins for balanced layouts</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to get started?</h2>
+            <p class="text-xl max-w-3xl mx-auto mb-8">
+                Join thousands of businesses already using our AI solutions to improve their operations.
+            </p>
+            <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-white hover:bg-gray-100">
+                Request a Demo
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Solution 1</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Solution 2</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Solution 3</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Documentation</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Blog</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-primary">About Us</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Careers</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-200 text-center">
+                <p class="text-gray-500">&copy; 2025 Company Name. All rights reserved.</p>
+                <div class="mt-4 flex justify-center space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-gray-600">
+                        <i data-lucide="twitter" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-600">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-600">
+                        <i data-lucide="github" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

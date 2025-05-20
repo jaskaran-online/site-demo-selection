@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Style Demos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#0B2447',
+                        'secondary': '#19376D',
+                        'accent': '#576CBC',
+                        'light': '#A5D7E8',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafb;
+        }
+    </style>
+</head>
+<body class="font-poppins">
+    <div class="container mx-auto px-4 py-12 max-w-6xl">
+        <header class="mb-12 text-center">
+            <h1 class="text-4xl font-bold text-primary mb-4">Website Style Demos</h1>
+            <p class="text-xl text-gray-600">Select a style to preview</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Style 1: Anthropic-inspired -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
+                <div class="h-48 bg-gradient-to-r from-primary to-accent flex items-center justify-center">
+                    <h3 class="text-2xl font-semibold text-white">Anthropic Style</h3>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-600 mb-6">Clean, modern design with focus on typography and whitespace. Features a minimalist aesthetic with subtle coral accents.</p>
+                    <a href="styles/anthropic-style.html" class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-md transition-colors">View Demo</a>
+                </div>
+            </div>
+
+            <!-- Style 2: AWS-inspired -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
+                <div class="h-48 bg-gradient-to-r from-secondary to-accent flex items-center justify-center">
+                    <h3 class="text-2xl font-semibold text-white">AWS Style</h3>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-600 mb-6">Robust and technical design with a focus on information architecture. Features tabbed navigation and structured content blocks.</p>
+                    <a href="styles/aws-style.html" class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-md transition-colors">View Demo</a>
+                </div>
+            </div>
+
+            <!-- Style 3: Transpoco-inspired -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
+                <div class="h-48 bg-gradient-to-r from-accent to-light flex items-center justify-center">
+                    <h3 class="text-2xl font-semibold text-white">Transpoco Style</h3>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-600 mb-6">Service-oriented design with industry-specific segments. Features practical navigation and bold call-to-action elements.</p>
+                    <a href="styles/transpoco-style.html" class="inline-block bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-md transition-colors">View Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-16 text-center text-gray-500">
+            <p>All designs use the Poppins font family and Tailwind CSS framework.</p>
+            <p class="mt-2">&copy; 2025 Demo Selection</p>
+        </footer>
+    </div>
+</body>
+</html>

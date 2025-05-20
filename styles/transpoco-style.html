@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transpoco Style Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#1F364D',
+                        'secondary': '#2A6040',
+                        'accent': '#4ECCA3',
+                        'light-bg': '#F8FAFC',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-light-bg text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-primary">COMPANY</span>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="#" class="border-secondary text-secondary inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Solutions</a>
+                        <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Industries</a>
+                        <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Resources</a>
+                        <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">About Us</a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <a href="#" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-secondary hover:bg-opacity-90">
+                        Get Pricing
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-primary mb-6">
+                    The Best Value & Service Across All Industries
+                </h1>
+            </div>
+
+            <!-- Industry Navigation -->
+            <div class="flex overflow-x-auto py-4 mb-12 scrollbar-hide">
+                <div class="flex space-x-2 border rounded-lg border-gray-200 w-full">
+                    <button class="flex-1 px-4 py-3 text-sm font-medium rounded-lg bg-accent text-primary">
+                        All Industries
+                    </button>
+                    <button class="flex-1 px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-lg">
+                        Aviation
+                    </button>
+                    <button class="flex-1 px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-lg">
+                        Construction
+                    </button>
+                    <button class="flex-1 px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-lg">
+                        Logistics
+                    </button>
+                    <button class="flex-1 px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-lg">
+                        Manufacturing
+                    </button>
+                    <button class="flex-1 px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-lg">
+                        Utilities
+                    </button>
+                </div>
+            </div>
+
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+                <div class="mb-8 lg:mb-0">
+                    <div class="w-full h-auto rounded-lg shadow-md bg-gray-200 min-h-[300px] flex items-center justify-center">
+                        <i data-lucide="image" class="w-16 h-16 text-gray-400"></i>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-primary mb-6">All Industries</h2>
+                    <p class="text-gray-600 mb-8">
+                        At Company, we help organizations manage their fleets and assets
+                        securely and efficiently—whether you're running mission-critical
+                        operations in public utilities and security or managing a small
+                        business. Our ISO-certified solutions are built around your needs,
+                        ensuring compliance while keeping things simple and effective.
+                    </p>
+                    <a href="#" class="inline-flex items-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-secondary hover:bg-opacity-90">
+                        Get Pricing
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-light-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary">Our Services</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive solutions designed to optimize your operations and improve efficiency.
+                </p>
+            </div>
+
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                    <div class="h-48 bg-primary flex items-center justify-center p-6">
+                        <i data-lucide="truck" class="w-16 h-16 text-accent"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Fleet Management</h3>
+                        <p class="text-gray-600 mb-4">
+                            Streamline your fleet operations with our comprehensive management system that provides real-time tracking, maintenance scheduling, and performance analytics.
+                        </p>
+                        <a href="#" class="text-secondary font-medium hover:text-accent flex items-center">
+                            Learn more
+                            <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                    <div class="h-48 bg-primary flex items-center justify-center p-6">
+                        <i data-lucide="fuel" class="w-16 h-16 text-accent"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Fuel Management</h3>
+                        <p class="text-gray-600 mb-4">
+                            Optimize fuel consumption and reduce costs with our intelligent fuel management system that tracks usage, identifies inefficiencies, and prevents fuel theft.
+                        </p>
+                        <a href="#" class="text-secondary font-medium hover:text-accent flex items-center">
+                            Learn more
+                            <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                    <div class="h-48 bg-primary flex items-center justify-center p-6">
+                        <i data-lucide="activity" class="w-16 h-16 text-accent"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-3">Asset Tracking</h3>
+                        <p class="text-gray-600 mb-4">
+                            Keep track of your valuable assets with our GPS-based tracking solution that provides location data, utilization metrics, and maintenance alerts.
+                        </p>
+                        <a href="#" class="text-secondary font-medium hover:text-accent flex items-center">
+                            Learn more
+                            <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary">Why Choose Us</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                    We deliver value through innovative solutions that address your specific needs.
+                </p>
+            </div>
+
+            <div class="grid gap-8 md:grid-cols-2">
+                <!-- Left Column -->
+                <div class="space-y-8">
+                    <!-- Benefit 1 -->
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-accent text-primary">
+                                <i data-lucide="check" class="h-6 w-6"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-semibold text-primary">Cost Reduction</h3>
+                            <p class="mt-2 text-gray-600">
+                                Our solutions help you reduce operational costs by optimizing routes, minimizing fuel consumption, and preventing maintenance issues.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Benefit 2 -->
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-accent text-primary">
+                                <i data-lucide="check" class="h-6 w-6"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-semibold text-primary">Increased Safety</h3>
+                            <p class="mt-2 text-gray-600">
+                                Enhance driver and vehicle safety with real-time monitoring, driver behavior analysis, and proactive maintenance alerts.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Benefit 3 -->
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-accent text-primary">
+                                <i data-lucide="check" class="h-6 w-6"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-semibold text-primary">Regulatory Compliance</h3>
+                            <p class="mt-2 text-gray-600">
+                                Stay compliant with industry regulations and standards with automated reporting and documentation features.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column -->
+                <div class="space-y-8">
+                    <!-- Benefit 4 -->
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-accent text-primary">
+                                <i data-lucide="check" class="h-6 w-6"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-semibold text-primary">Improved Efficiency</h3>
+                            <p class="mt-2 text-gray-600">
+                                Optimize your operations with data-driven insights that help you make informed decisions and streamline processes.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Benefit 5 -->
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-accent text-primary">
+                                <i data-lucide="check" class="h-6 w-6"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-semibold text-primary">Enhanced Customer Service</h3>
+                            <p class="mt-2 text-gray-600">
+                                Provide better service to your customers with accurate delivery estimates, timely responses, and reliable operations.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Benefit 6 -->
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-accent text-primary">
+                                <i data-lucide="check" class="h-6 w-6"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-semibold text-primary">Sustainable Operations</h3>
+                            <p class="mt-2 text-gray-600">
+                                Reduce your environmental footprint with solutions that promote fuel efficiency and lower emissions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-16 bg-light-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary">What Our Clients Say</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                    Don't just take our word for it—hear from our satisfied customers.
+                </p>
+            </div>
+
+            <div class="grid gap-8 md:grid-cols-3">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent">
+                            <i data-lucide="star" class="w-5 h-5 inline-block"></i>
+                            <i data-lucide="star" class="w-5 h-5 inline-block"></i>
+                            <i data-lucide="star" class="w-5 h-5 inline-block"></i>
+                            <i data-lucide="star" class="w-5 h-5 inline-block"></i>
+                            <i data-lucide="star" class="w-5 h-5 inline-block"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">
+                        "Implementing Company's fleet management solution has transformed our operations. We've seen a significant reduction in fuel costs and improved efficiency across our entire fleet."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <div class="h-10 w-10 rounded-full bg-gray-300"></div>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-primary">Robert Johnson</p>
+                            <p class="text-sm text-gray-500">Fleet Manager, Logistics Corp</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent">
+                            <i data-lucide="star" class="w-5 h-5 inline-block"></i>
+                            <i data-lucide="star" class="w-5 h-5 inline-block"></i>
+                            <i data-lucide="star" class="w-5 h-5 inline-block"></i>
+                            <i data-lucide="star" class="w-5 h-5 inline-block"></i>
+                            <i data-lucide="star" class="w-5 h-5 inline-block"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">
+                        "The asset tracking system has been a game-changer for our construction business. We always know where our equipment is, which has eliminated theft and improved utilization."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <div class="h-10 w-10 rounded-full bg-gray-300"></div>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-primary">Emily Rodriguez</p>
+                            <p class="text-sm text-gray-500">Operations Director, Build Co.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent">
+                            <i data-lucide="star" class="w-5 h-5 inline-block"></i>
+                            <i data-lucide="star" class="w-5 h-5 inline-block"></i>
+                            <i data-lucide="star" class="w-5 h-5 inline-block"></i>
+                            <i data-lucide="star" class="w-5 h-5 inline-block"></i>
+                            <i data-lucide="star" class="w-5 h-5 inline-block"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">
+                        "Customer support has been exceptional. The team is always available to help with any questions and has been proactive in suggesting ways to optimize our system."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <div class="h-10 w-10 rounded-full bg-gray-300"></div>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-primary">Michael Chen</p>
+                            <p class="text-sm text-gray-500">IT Manager, Metro Transit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design System Section -->
+    <section class="py-16 bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary">Design System</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                    Elements that make up this design theme.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <!-- Colors -->
+                <div class="bg-light-bg rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Color Palette</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-md bg-primary mr-4"></div>
+                            <div>
+                                <p class="font-medium">Primary: #1F364D</p>
+                                <p class="text-sm text-gray-500">Used for headings, text, and primary elements</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-md bg-secondary mr-4"></div>
+                            <div>
+                                <p class="font-medium">Secondary: #2A6040</p>
+                                <p class="text-sm text-gray-500">Used for buttons, active elements, and highlights</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-md bg-accent mr-4"></div>
+                            <div>
+                                <p class="font-medium">Accent: #4ECCA3</p>
+                                <p class="text-sm text-gray-500">Used for accents, icons, and supporting elements</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-md bg-light-bg mr-4"></div>
+                            <div>
+                                <p class="font-medium">Light Background: #F8FAFC</p>
+                                <p class="text-sm text-gray-500">Used for section backgrounds</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Typography -->
+                <div class="bg-light-bg rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Typography</h3>
+                    <p class="mb-4">All text uses the <span class="font-medium">Poppins</span> font family.</p>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-4xl font-bold text-primary">Heading 1</p>
+                            <p class="text-sm text-gray-500">Poppins Bold, 36px</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-primary">Heading 2</p>
+                            <p class="text-sm text-gray-500">Poppins Bold, 30px</p>
+                        </div>
+                        <div>
+                            <p class="text-xl font-semibold text-primary">Heading 3</p>
+                            <p class="text-sm text-gray-500">Poppins SemiBold, 20px</p>
+                        </div>
+                        <div>
+                            <p class="text-base text-gray-600">Body Text</p>
+                            <p class="text-sm text-gray-500">Poppins Regular, 16px</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Components -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <!-- Buttons -->
+                <div class="bg-light-bg rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Buttons</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <button class="px-5 py-3 bg-secondary text-white rounded-md font-medium">Primary Button</button>
+                            <p class="text-sm text-gray-500 mt-2">Used for primary actions like "Get Pricing"</p>
+                        </div>
+                        <div>
+                            <button class="px-5 py-3 border border-gray-300 bg-white text-primary rounded-md font-medium">Secondary Button</button>
+                            <p class="text-sm text-gray-500 mt-2">Used for secondary actions</p>
+                        </div>
+                        <div>
+                            <a href="#" class="text-secondary font-medium hover:text-accent flex items-center">
+                                Text Link
+                                <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                            </a>
+                            <p class="text-sm text-gray-500 mt-2">Used for navigation links and "Learn more" actions</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cards -->
+                <div class="bg-light-bg rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Cards & Components</h3>
+                    <div class="space-y-6">
+                        <!-- Service Card Example -->
+                        <div>
+                            <div class="bg-white rounded-lg overflow-hidden shadow-sm w-full max-w-xs">
+                                <div class="h-20 bg-primary flex items-center justify-center">
+                                    <i data-lucide="settings" class="w-8 h-8 text-accent"></i>
+                                </div>
+                                <div class="p-4">
+                                    <h3 class="font-semibold text-primary mb-2">Card Component</h3>
+                                    <p class="text-sm text-gray-600">
+                                        Used for displaying services and content blocks.
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-sm text-gray-500 mt-2">Service cards with icon headers</p>
+                        </div>
+                        
+                        <!-- Tab Navigation Example -->
+                        <div>
+                            <div class="border rounded-lg border-gray-200 w-full flex">
+                                <button class="flex-1 px-4 py-2 text-sm font-medium rounded-lg bg-accent text-primary">
+                                    Selected Tab
+                                </button>
+                                <button class="flex-1 px-4 py-2 text-sm font-medium text-gray-600">
+                                    Tab Option
+                                </button>
+                            </div>
+                            <p class="text-sm text-gray-500 mt-2">Industry selector tabs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Design Principles -->
+            <div class="bg-light-bg p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-primary mb-4">Design Principles</h3>
+                <ul class="space-y-3 text-gray-600">
+                    <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-6 w-6 rounded-md bg-accent text-primary">
+                                <i data-lucide="check" class="h-4 w-4"></i>
+                            </div>
+                        </div>
+                        <span class="ml-3"><strong>Industry-focused:</strong> Content organized by industry vertical for targeted relevance</span>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-6 w-6 rounded-md bg-accent text-primary">
+                                <i data-lucide="check" class="h-4 w-4"></i>
+                            </div>
+                        </div>
+                        <span class="ml-3"><strong>Clean, professional:</strong> Structured layout with ample whitespace and focused content</span>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-6 w-6 rounded-md bg-accent text-primary">
+                                <i data-lucide="check" class="h-4 w-4"></i>
+                            </div>
+                        </div>
+                        <span class="ml-3"><strong>Clear value proposition:</strong> Benefits and features clearly highlighted with supporting visuals</span>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-6 w-6 rounded-md bg-accent text-primary">
+                                <i data-lucide="check" class="h-4 w-4"></i>
+                            </div>
+                        </div>
+                        <span class="ml-3"><strong>Service-oriented:</strong> Focus on solutions and practical applications rather than technology</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to optimize your operations?</h2>
+            <p class="text-xl max-w-3xl mx-auto mb-8">
+                Contact us today to learn how our solutions can help your business.
+            </p>
+            <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-accent hover:bg-opacity-90">
+                Get Pricing
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold text-primary mb-4">Solutions</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-secondary">Fleet Management</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-secondary">Fuel Management</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-secondary">Asset Tracking</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-primary mb-4">Industries</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-secondary">Aviation</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-secondary">Construction</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-secondary">Logistics</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-secondary">Manufacturing</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-secondary">Utilities</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-primary mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-secondary">Blog</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-secondary">Case Studies</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-secondary">Guides</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-secondary">Webinars</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-primary mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-secondary">About Us</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-secondary">Contact</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-secondary">Careers</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-secondary">Partner Program</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-200">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500">&copy; 2025 Company Name. All rights reserved.</p>
+                    <div class="mt-4 md:mt-0 flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-gray-600">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-600">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-600">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-600">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
