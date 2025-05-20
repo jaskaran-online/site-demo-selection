@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iVALT Theme Customizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'teal': '#30B68E',
+                        'navy': '#1E4884',
+                        'light-teal': '#4DD8AD',
+                        'dark-navy': '#0F3366',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: var(--font-family, 'Poppins', sans-serif);
+        }
+        
+        .color-preview {
+            width: 100%;
+            height: 60px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .color-preview.teal {
+            background-color: #30B68E;
+        }
+        
+        .color-preview.navy {
+            background-color: #1E4884;
+        }
+        
+        .color-preview.light-teal {
+            background-color: #4DD8AD;
+        }
+        
+        .color-preview.dark-navy {
+            background-color: #0F3366;
+        }
+    </style>
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="flex items-center">
+                            <svg class="h-8 w-8" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M256 0C114.6 0 0 114.6 0 256C0 397.4 114.6 512 256 512C397.4 512 512 397.4 512 256C512 114.6 397.4 0 256 0ZM256.3 60.3C329 60.3 389 120.3 389 193C389 225.5 377.5 255.1 356.5 279.1C345.5 292.2 336.3 304.8 327.4 316.5C291.8 359.5 276.7 389.7 273.8 445.1H223.1C226.1 375.8 246.1 337.9 286.8 287.2C294.9 276.4 303.3 265.1 313.1 253.4C328.1 235.8 336.4 215.2 336.4 193C336.4 149.4 300.6 113.6 257 113.6C213.4 113.6 177.6 149.4 177.6 193H125C125 120.3 184.1 60.3 256.3 60.3ZM273.8 473.9V512H223.1V473.9H273.8Z" fill="#30B68E"/>
+                            </svg>
+                            <span class="ml-2 text-2xl font-bold text-navy">iVALT</span>
+                        </div>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="#" class="border-teal text-teal inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Theme Customizer</a>
+                        <a href="index.html" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">All Demos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-navy mb-6">
+                    iVALT Theme Customizer
+                </h1>
+                <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+                    Customize fonts and colors to create your perfect theme
+                </p>
+            </div>
+
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-start">
+                <!-- Preview Section -->
+                <div class="mb-12 lg:mb-0">
+                    <h2 class="text-2xl font-bold text-navy mb-6">Theme Preview</h2>
+                    
+                    <!-- Preview Box -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 border border-gray-200 mb-8">
+                        <h3 class="text-xl font-semibold text-teal mb-4">Header Example</h3>
+                        <p class="text-gray-600 mb-6">
+                            This text demonstrates the selected font style. You'll see how headings, paragraphs, and other elements look with your chosen font.
+                        </p>
+                        
+                        <div class="space-y-4 mb-6">
+                            <button class="px-4 py-2 bg-teal text-white rounded font-medium">
+                                Primary Button
+                            </button>
+                            <button class="px-4 py-2 border border-teal text-teal bg-white rounded font-medium">
+                                Secondary Button
+                            </button>
+                        </div>
+                        
+                        <div class="border-t border-gray-200 pt-4">
+                            <h4 class="font-medium text-navy mb-2">Sample Content</h4>
+                            <p class="text-gray-600 text-sm">
+                                The quick brown fox jumps over the lazy dog. This pangram contains all the letters of the English alphabet.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Color Scheme Preview -->
+                    <h3 class="text-xl font-semibold text-navy mb-4">Brand Colors</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <div class="color-preview teal"></div>
+                            <p class="text-sm font-medium">Teal Primary (#30B68E)</p>
+                        </div>
+                        <div>
+                            <div class="color-preview navy"></div>
+                            <p class="text-sm font-medium">Navy Primary (#1E4884)</p>
+                        </div>
+                        <div>
+                            <div class="color-preview light-teal"></div>
+                            <p class="text-sm font-medium">Light Teal (#4DD8AD)</p>
+                        </div>
+                        <div>
+                            <div class="color-preview dark-navy"></div>
+                            <p class="text-sm font-medium">Dark Navy (#0F3366)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Explanation Section -->
+                <div>
+                    <h2 class="text-2xl font-bold text-navy mb-6">How to Use</h2>
+                    
+                    <div class="bg-white rounded-lg shadow-lg p-6 border border-gray-200">
+                        <p class="text-gray-600 mb-6">
+                            Use the customizer panel in the top-right corner to preview different fonts and colors for the website.
+                        </p>
+                        
+                        <h3 class="text-lg font-semibold text-teal mb-3">Available Options</h3>
+                        <ul class="space-y-4 mb-6">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-teal mr-2 flex-shrink-0"></i>
+                                <div>
+                                    <span class="font-medium">Font Selection</span>
+                                    <p class="text-sm text-gray-600">Choose from 6 carefully selected font families</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-teal mr-2 flex-shrink-0"></i>
+                                <div>
+                                    <span class="font-medium">Brand Colors</span>
+                                    <p class="text-sm text-gray-600">Switch between teal and navy as primary colors</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="w-5 h-5 text-teal mr-2 flex-shrink-0"></i>
+                                <div>
+                                    <span class="font-medium">Custom Colors</span>
+                                    <p class="text-sm text-gray-600">Choose any custom color with the color picker</p>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <h3 class="text-lg font-semibold text-teal mb-3">Font Options</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="p-3 border border-gray-200 rounded">
+                                <p class="font-medium" style="font-family: 'Poppins', sans-serif;">Poppins</p>
+                                <p class="text-sm text-gray-600">Modern, geometric sans-serif</p>
+                            </div>
+                            <div class="p-3 border border-gray-200 rounded">
+                                <p class="font-medium" style="font-family: 'Roboto', sans-serif;">Roboto</p>
+                                <p class="text-sm text-gray-600">Clean, professional sans-serif</p>
+                            </div>
+                            <div class="p-3 border border-gray-200 rounded">
+                                <p class="font-medium" style="font-family: 'Open Sans', sans-serif;">Open Sans</p>
+                                <p class="text-sm text-gray-600">Highly readable for web</p>
+                            </div>
+                            <div class="p-3 border border-gray-200 rounded">
+                                <p class="font-medium" style="font-family: 'Montserrat', sans-serif;">Montserrat</p>
+                                <p class="text-sm text-gray-600">Elegant with unique character</p>
+                            </div>
+                            <div class="p-3 border border-gray-200 rounded">
+                                <p class="font-medium" style="font-family: 'Lato', sans-serif;">Lato</p>
+                                <p class="text-sm text-gray-600">Balanced and approachable</p>
+                            </div>
+                            <div class="p-3 border border-gray-200 rounded">
+                                <p class="font-medium" style="font-family: 'Inter', sans-serif;">Inter</p>
+                                <p class="text-sm text-gray-600">Modern, crisp, and versatile</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Examples Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-navy mb-6">Component Examples</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    See how different components look with your chosen theme
+                </p>
+            </div>
+            
+            <div class="grid gap-8 md:grid-cols-3">
+                <!-- Card Example -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                    <div class="h-40 bg-teal flex items-center justify-center">
+                        <i data-lucide="layout" class="w-12 h-12 text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-navy mb-3">Card Component</h3>
+                        <p class="text-gray-600 mb-4">
+                            This card demonstrates how your selected font and colors affect component styling.
+                        </p>
+                        <a href="#" class="text-teal font-medium hover:text-light-teal flex items-center">
+                            Learn more
+                            <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Alert Example -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-navy mb-4">Alert Component</h3>
+                        
+                        <div class="bg-teal bg-opacity-10 border-l-4 border-teal p-4 mb-4">
+                            <div class="flex">
+                                <i data-lucide="info" class="w-5 h-5 text-teal mr-2"></i>
+                                <div>
+                                    <p class="font-medium text-teal">Information</p>
+                                    <p class="text-sm text-gray-600">This is an information alert with your theme applied.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-yellow-100 border-l-4 border-yellow-400 p-4">
+                            <div class="flex">
+                                <i data-lucide="alert-triangle" class="w-5 h-5 text-yellow-600 mr-2"></i>
+                                <div>
+                                    <p class="font-medium text-yellow-600">Warning</p>
+                                    <p class="text-sm text-gray-600">This is a warning alert for comparison.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Form Elements -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-navy mb-4">Form Elements</h3>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Input Field</label>
+                                <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal focus:border-teal" placeholder="Enter text">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Dropdown</label>
+                                <select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal focus:border-teal">
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <input type="checkbox" class="h-4 w-4 text-teal focus:ring-teal border-gray-300 rounded">
+                                <label class="ml-2 block text-sm text-gray-700">Checkbox option</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center">
+                    <svg class="h-8 w-8" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M256 0C114.6 0 0 114.6 0 256C0 397.4 114.6 512 256 512C397.4 512 512 397.4 512 256C512 114.6 397.4 0 256 0ZM256.3 60.3C329 60.3 389 120.3 389 193C389 225.5 377.5 255.1 356.5 279.1C345.5 292.2 336.3 304.8 327.4 316.5C291.8 359.5 276.7 389.7 273.8 445.1H223.1C226.1 375.8 246.1 337.9 286.8 287.2C294.9 276.4 303.3 265.1 313.1 253.4C328.1 235.8 336.4 215.2 336.4 193C336.4 149.4 300.6 113.6 257 113.6C213.4 113.6 177.6 149.4 177.6 193H125C125 120.3 184.1 60.3 256.3 60.3ZM273.8 473.9V512H223.1V473.9H273.8Z" fill="#30B68E"/>
+                    </svg>
+                    <span class="ml-2 text-xl font-bold text-navy">iVALT</span>
+                </div>
+                <p class="text-gray-500 mt-4 md:mt-0">&copy; 2025 iVALT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include theme customizer script -->
+    <script src="../js/theme-customizer.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Load all fonts upfront for preview
+        const fontLinks = [
+            'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap',
+            'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap',
+            'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap',
+            'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap',
+            'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap',
+            'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'
+        ];
+        
+        fontLinks.forEach(href => {
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = href;
+            document.head.appendChild(link);
+        });
+    </script>
+</body>
+</html>
